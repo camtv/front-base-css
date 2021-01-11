@@ -1,0 +1,23 @@
+{
+  "name": "front-base-css",
+  "version": "1.0.0",
+  "description": "Repo dei css e mixins di base per le pagine esterne ed i componenti di base di camtv",
+  "main": "main.scss",
+  "scripts": {
+    "build": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camtv/front-base-css.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/camtv/front-base-css/issues"
+  },
+  "homepage": "https://github.com/camtv/front-base-css#readme",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "sass": "^1.32.2"
+  }
+}

@@ -1,0 +1,338 @@
+@import "../main/_variables.scss";
+/////////////////////////////////////////////////////////////////////
+// UTILITY CLASSES @media (min-width: 1024px) for desktop
+/////////////////////////////////////////////////////////////////////
+@include media-lg {
+	.cards-container {
+
+		// ALIGN TEXT
+		.text-d-center {
+			text-align: center;
+		}
+
+		.text-d-right {
+			text-align: right;
+		}
+
+		.text-d-left {
+			text-align: left;
+		}
+		// ALIGN TEXT END
+
+		// MARGINS
+		.m-d-5 {
+			margin: 5px;
+		}
+
+		.m-d-10 {
+			margin: 10px;
+		}
+
+		.m-d-15 {
+			margin: 15px;
+		}
+
+		.m-d-20 {
+			margin: 20px;
+		}
+
+		.m-d-25 {
+			margin: 25px;
+		}
+
+		.m-d-30 {
+			margin: 30px;
+		}
+
+		.m-v-d-5 {
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+
+		.m-v-d-10 {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+		.m-v-d-15 {
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+
+		.m-v-d-20 {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		.m-v-d-25 {
+			margin-top: 25px;
+			margin-bottom: 25px;
+		}
+
+		.m-v-d-30 {
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+
+		.m-h-d-5 {
+			margin-right: 5px;
+			margin-left: 5px;
+		}
+
+		.m-h-d-10 {
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+
+		.m-h-d-15 {
+			margin-right: 15px;
+			margin-left: 15px;
+		}
+
+		.m-h-d-20 {
+			margin-right: 20px;
+			margin-left: 20px;
+		}
+
+		.m-h-d-25 {
+			margin-right: 25px;
+			margin-left: 25px;
+		}
+
+		.m-h-d-30 {
+			margin-right: 30px;
+			margin-left: 30px;
+		}
+
+		.m-t-d-5 {
+			margin-top: 5px;
+		}
+
+		.m-t-d-10 {
+			margin-top: 10px;
+		}
+
+		.m-t-d-15 {
+			margin-top: 15px;
+		}
+
+		.m-t-d-20 {
+			margin-top: 20px;
+		}
+
+		.m-t-d-25 {
+			margin-top: 25px;
+		}
+
+		.m-t-d-30 {
+			margin-top: 30px;
+		}
+
+		.m-r-d-5 {
+			margin-right: 5px;
+		}
+
+		.m-r-d-10 {
+			margin-right: 10px;
+		}
+
+		.m-r-d-15 {
+			margin-right: 15px;
+		}
+
+		.m-r-d-20 {
+			margin-right: 20px;
+		}
+
+		.m-r-d-25 {
+			margin-right: 25px;
+		}
+
+		.m-r-d-30 {
+			margin-right: 30px;
+		}
+
+		.m-l-d-5 {
+			margin-left: 5px;
+		}
+
+		.m-l-d-10 {
+			margin-left: 10px;
+		}
+
+		.m-l-d-15 {
+			margin-left: 15px;
+		}
+
+		.m-l-d-20 {
+			margin-left: 20px;
+		}
+
+		.m-l-d-25 {
+			margin-left: 25px;
+		}
+
+		.m-l-d-30 {
+			margin-left: 30px;
+		}
+
+		.m-b-d-5 {
+			margin-bottom: 5px;
+		}
+
+		.m-b-d-10 {
+			margin-bottom: 10px;
+		}
+
+		.m-b-d-15 {
+			margin-bottom: 15px;
+		}
+
+		.m-b-d-20 {
+			margin-bottom: 20px;
+		}
+
+		.m-b-d-25 {
+			margin-bottom: 25px;
+		}
+
+		.m-b-d-30 {
+			margin-bottom: 30px;
+		}
+		// MARGINS END
+
+		// PADDING
+		.p-d-5 {
+			padding: 5px;
+		}
+
+		.p-d-10 {
+			padding: 10px;
+		}
+
+		.p-d-15 {
+			padding: 15px;
+		}
+
+		.p-d-20 {
+			padding: 20px;
+		}
+
+		.p-d-25 {
+			padding: 25px;
+		}
+
+		.p-30 {
+			padding: 30px;
+		}
+
+		.p-v-d-5 {
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+
+		.p-v-d-10 {
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+
+		.p-v-d-15 {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+
+		.p-v-d-20 {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+
+		.p-v-d-25 {
+			padding-top: 25px;
+			padding-bottom: 25px;
+		}
+
+		.p-v-d-30 {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+
+		.p-h-d-5 {
+			padding-right: 5px;
+			padding-left: 5px;
+		}
+
+		.p-h-d-10 {
+			padding-right: 10px;
+			padding-left: 10px;
+		}
+
+		.p-h-d-15 {
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+
+		.p-h-d-20 {
+			padding-right: 20px;
+			padding-left: 20px;
+		}
+
+		.p-h-d-25 {
+			padding-right: 25px;
+			padding-left: 25px;
+		}
+
+		.p-h-d-30 {
+			padding-right: 30px;
+			padding-left: 30px;
+		}
+
+		.p-t-d-5 {
+			padding-top: 5px;
+		}
+
+		.p-t-d-10 {
+			padding-top: 10px;
+		}
+
+		.p-t-d-15 {
+			padding-top: 15px;
+		}
+
+		.p-t-d-20 {
+			padding-top: 20px;
+		}
+
+		.p-t-d-25 {
+			padding-top: 25px;
+		}
+
+		.p-t-d-30 {
+			padding-top: 30px;
+		}
+
+		.p-b-d-5 {
+			padding-bottom: 5px;
+		}
+
+		.p-b-d-10 {
+			padding-bottom: 10px;
+		}
+
+		.p-b-d-15 {
+			padding-bottom: 15px;
+		}
+
+		.p-b-d-20 {
+			padding-bottom: 20px;
+		}
+
+		.p-b-d-25 {
+			padding-bottom: 25px;
+		}
+
+		.p-b-d-30 {
+			padding-bottom: 30px;
+		}
+		// PADDING END
+	}
+}
