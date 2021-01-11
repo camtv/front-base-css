@@ -1,7 +1,7 @@
 {
-  "name": "front-base-css",
+  "name": "@camtv/front-base-css",
   "version": "1.0.0",
-  "description": "Repo dei css e mixins di base per le pagine esterne ed i componenti di base di camtv",
+  "description": "Repo dei css e mixins di base per le pagine esterne ed i componenti di base di CamTV",
   "main": "main.scss",
   "scripts": {
     "build": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +19,8 @@
   "devDependencies": {
     "cssnano": "^4.1.10",
     "sass": "^1.32.2"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }
