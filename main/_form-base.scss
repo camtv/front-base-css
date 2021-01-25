@@ -18,3 +18,42 @@ textarea {
     box-shadow: unset;
     transition: all 0.3s ease-out;
 }
+
+/* CSS for basic solid button */
+.ctv-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    max-width: 100%;
+    line-height: 1.3;
+    text-decoration: none;
+    text-align: center;
+    word-break: break-word;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    background-color: #ff7d02;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0);
+    min-width: 40%;
+    font-size: 15px;
+    padding: 11px 22px;
+    &:active,
+    &:hover {
+        opacity: 0.85;
+    }
+    &[disabled],
+    &.disabled {
+        box-shadow: none;
+        opacity: unset;
+        background-color:#ddd;
+        cursor: default;
+    }
+}
+/* CSS for basic solid button */
+
