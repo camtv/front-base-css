@@ -8,6 +8,181 @@
 	<link rel="stylesheet" href="../modifiers.scss">
   </head>
   <body> 
-    
-  </body>
+    <div style="margin:15px auto; padding:15px; max-width: 650px; width: 100%;">
+      <h1>front base CSS form</h1>
+    </div>
+    <div style="margin:15px auto; padding:15px; max-width: 650px; width: 100%; border:1px solid #ddd;">
+      <h3>Input e textarea</h3>
+
+      <div class="form-row">
+          <div class="ctv-input-field">
+              <input id="USER_SETTINGS_LAST_NAME" class="LastName" length="50" maxlength="50" data-validate="lastname, repeatedchar, names">
+              <label for="USER_SETTINGS_LAST_NAME">Campo non obbligatorio</label>
+              <div class="error">&nbsp;</div>
+          <span class="character-counter" style="float: right; font-size: 12px; height: 1px;"></span></div>
+      </div>
+
+      <div class="form-row">
+          <div class="ctv-input-field">
+              <input id="USER_SETTINGS_FIRST_NAME" class="FirstName" length="50" maxlength="50" data-validate="firstname, repeatedchar, names" required="">
+              <label for="USER_SETTINGS_FIRST_NAME">Campo obbligatorio</label>
+              <div class="error">&nbsp;</div>
+          <span class="character-counter" style="float: right; font-size: 12px; height: 1px;"></span></div>
+      </div>
+
+      <div class="form-row">
+          <div class="ctv-input-field col-sm-12 col-md-4">
+              <input id="USER_SETTINGS_CITY" length="100" maxlength="100" class="City">
+              <label for="USER_SETTINGS_CITY">Campo 1</label>
+              <div class="error">&nbsp;</div>
+
+          <span class="character-counter" style="float: right; font-size: 12px; height: 1px;"></span></div>
+
+          <div class="ctv-input-field col-sm-6 col-md-4">
+              <input id="USER_SETTINGS_ZIPCODE" length="35" maxlength="35" class="ZipCode">
+              <label for="USER_SETTINGS_ZIPCODE">Campo 2</label>
+              <div class="error">&nbsp;</div>
+
+          <span class="character-counter" style="float: right; font-size: 12px; height: 1px;"></span></div>
+
+          <div class="ctv-input-field col-sm-6 col-md-4">
+              <input id="USER_SETTINGS_PROVINCE" length="35" maxlength="35" class="Province">
+              <label for="USER_SETTINGS_PROVINCE">Campo 3</label>
+              <div class="error">&nbsp;</div>
+
+          <span class="character-counter" style="float: right; font-size: 12px; height: 1px;"></span></div>
+      </div>
+
+      <div class="ctv-input-field">
+          <textarea id="CREATE_WEBINAR_DIALOG_DESCRIPTION" placeholder="Testo di placeholder per la textarea" length="4096" maxlength="4096" required=""></textarea>
+          <label for="CREATE_WEBINAR_DIALOG_DESCRIPTION" class="active">Testo introduttivo</label>
+          <div class="error">&nbsp;</div>
+          <span class="character-counter" style="float: right; font-size: 12px; height: 1px;"></span>
+      </div>
+      <div class="button-set">
+          <button class="ctv-btn outline">
+            reset
+          </button>
+          <button class="ctv-btn">
+            Send
+          </button>
+      </div>
+    </div>
+
+
+    <div style="margin:15px auto; padding:15px; max-width: 650px; width: 100%; border:1px solid #ddd;">
+      <h3>Options</h3>
+      
+      <div class="form-row">
+          <div class="ctv-input-field">
+              <div class="options">
+                  <div>
+                      <input type="radio" name="poster-source" id="radio01" value="webcam" checked="checked">
+                      <label for="radio01">
+                          In linea
+                      </label>
+                  </div>
+                  <div>
+                      <input type="radio" name="poster-source" id="radio02" value="image">
+                      <label for="radio02">
+                          In linea
+                      </label>
+                  </div>
+              </div>
+              <label class="field-label">Copertina</label>
+              <div class="error"></div>
+          </div>
+      </div>
+
+      <div class="form-row">
+          <div class="ctv-input-field">
+              <div class="options">
+                  <div>
+                      <input type="radio" name="poster-source" id="radio03" value="webcam" checked="checked">
+                      <label for="radio03">
+                          Se il testo è lungo
+                      </label>
+                  </div>
+                  <div>
+                      <input type="radio" name="poster-source" id="radio04" value="image">
+                      <label for="radio04">
+                          Il contenuto va a capo automaticamente mantenendo la formattazione gradevole
+                      </label>
+                  </div>
+              </div>
+              <label class="field-label">Copertina</label>
+              <div class="error"></div>
+          </div>
+      </div>
+
+      <div class="form-row">
+          <div class="ctv-input-field">
+              <div class="options column">
+                  <div>
+                      <input type="radio" name="poster-source" id="radio05" value="webcam" checked="checked">
+                      <label for="radio05">
+                          In colonna
+                      </label>
+                  </div>
+                  <div>
+                      <input type="radio" name="poster-source" id="radio06" value="image">
+                      <label for="radio06">
+                          In colonna
+                      </label>
+                  </div>
+              </div>
+              <label class="field-label">Copertina</label>
+              <div class="error"></div>
+          </div>
+      </div>
+
+      <div class="form-row">
+          <div class="ctv-input-field">
+              <div class="options column">
+                  <div>
+                      <input name="CREATE_WEBINAR_DIALOG_PRICE" id="radio07" type="radio" value="0" checked="checked">
+                      <label for="radio07">Gratis (sostenibile con
+                          LKSCOIN)</label>
+                  </div>
+
+                  <div>
+                      <input name="CREATE_WEBINAR_DIALOG_PRICE" id="radio08" type="radio" value="1" disabled="disabled">
+                      <label for="radio08" class="price-pay-label">A
+                          Pagamento</label>
+                      <div class="price-spinner-wrap PriceSpinnerWrap disabled">
+                          <span>Prezzo:</span>
+                          <input class="price-input PriceInput" value="1" disabled="disabled">
+                          <span>LKSCOIN</span>
+                      </div>
+                  </div>
+              </div>
+              <label>Campo con un elemento a fianco della label</label>
+              <div class="error"></div>
+          </div>
+      </div>
+      
+  </div>
+
+  <div style="margin:15px auto; padding:15px; max-width: 650px; width: 100%; border:1px solid #ddd;">
+    <h3>Checkboxes</h3>
+
+    <div class="form-row">
+        <div class="ctv-input-field">
+            <input type="checkbox" id="check01">
+            <label for="check01" title="Ricevi da Amici">testo label</label>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="ctv-input-field">
+            <input type="checkbox" id="check02">
+            <label for="check02" title="Ricevi da Amici">
+                Testo molto lungo per provare la funzionalità della checkbox. Testo molto lungo per
+                provare la funzionalità della checkbox.
+            </label>
+        </div>
+    </div>
+  </div>
+
+</body>
 </html>
