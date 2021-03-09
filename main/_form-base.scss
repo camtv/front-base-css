@@ -126,6 +126,65 @@ textarea {
 			display: none;
 		}
 	}
+	&.select-field {
+		&:after {
+			content: "";
+			right: 10px;
+			position: absolute;
+			top: 35px;
+			pointer-events: none;
+			display: block;
+			width: 0;
+			line-height: 1;
+			height: 0;
+			border-top: 5px solid var(--color-text-black);
+			border-right: 5px solid transparent;
+			border-bottom: 0;
+			border-left: 5px solid transparent;
+		}
+		&.disabled {
+			&:after{
+				border-top: 5px solid var(--forms-disabled-color);
+			}
+
+		}
+	}
+	select {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		padding:5px 27px 5px 15px;
+		border:1px solid var(--border-gray-base);
+		border-radius: 3px;
+		font-family: Arial, Helvetica, sans-serif;
+    	width: 100%;
+		font-size: 15px;
+		color:var(--color-text-dark);
+		position:relative;
+
+		&:not(.disabled){
+			cursor: pointer;
+		}
+
+		&.disabled{
+			cursor: not-allowed;
+			color:var(--forms-disabled-color);
+			&:hover,
+			&:active {
+				border:1px solid var(--border-gray-light);
+			}
+		}
+		
+		&:hover {
+			border:1px solid var(--input-border-focus);
+		}
+		&:focus {
+			box-shadow: none;
+			outline: none;
+			border:1px solid var(--input-border-focus);
+		}
+
+	}
 
 	label {
 		position: relative;
@@ -357,6 +416,15 @@ textarea {
 				border-right-color: var(--forms-disabled-color);
 			}
 		}
+		&[required] {
+			~ label {
+				&:after {
+					content: "*";
+					position: relative;
+					opacity: 1;
+				}
+			}
+		}
 	}
 
 	textarea {
@@ -365,70 +433,6 @@ textarea {
 		max-height: 90px;
 		overflow-y: auto;
 		resize: none;
-	}
-	
-	.select-wrapper {
-		position: relative;
-		order: 1;
-
-		select {
-			display: none;
-		}
-
-		span.caret {
-			position: absolute;
-			top: 0;
-			right: 5px;
-			height: 100%;
-			font-size: 20px;
-			color: var(--color-text-medium);
-			z-index: 1;
-			pointer-events: none;
-			display: flex;
-			align-items: center;
-		}
-
-		input {
-			height: 30px;
-			line-height: unset;
-
-			&.select-dropdown {
-				padding-right: 30px;
-				cursor: pointer;
-				width: 100%;
-			}
-		}
-
-		.dropdown-content {
-			display: none;
-			background-color: #fff;
-			z-index: 999;
-			box-shadow: 0 0 4px rgba(0,0,0,0.16), 0 4px 4px rgba(0,0,0,0.12);
-			border: 1px solid var(--border-gray-base);
-			border-radius: 3px;
-
-			li {
-				min-height: 30px;
-				cursor: pointer;
-				text-align: left;
-
-				&:hover {
-					background-color: var(--border-gray-light);
-				}
-
-				span {
-					display: block;
-					color: inherit;
-					padding: 5px;
-				}
-			}
-		}
-
-		& + label {
-			position: static;
-		}
-
-		
 	}
 
 	.options {
@@ -439,7 +443,7 @@ textarea {
 		order: 1;
 		min-height: 30px;
 
-        @include required-asterisk;
+        
         
 		&.column {
 			flex-direction: column;

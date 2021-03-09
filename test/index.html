@@ -25,7 +25,7 @@
       <div class="form-row">
           <div class="ctv-input-field">
               <input id="USER_SETTINGS_FIRST_NAME" class="FirstName" length="50" maxlength="50" data-validate="firstname, repeatedchar, names" required="">
-              <label for="USER_SETTINGS_FIRST_NAME">Campo obbligatorio</label>
+              <label class="required" for="USER_SETTINGS_FIRST_NAME">Campo obbligatorio</label>
               <div class="error">&nbsp;</div>
           <span class="character-counter" style="float: right; font-size: 12px; height: 1px;"></span></div>
       </div>
@@ -59,6 +59,41 @@
           <div class="error">&nbsp;</div>
           <span class="character-counter" style="float: right; font-size: 12px; height: 1px;"></span>
       </div>
+
+      <div class="ctv-input-field select-field">
+        <label class="active">Select</label>
+        <select>
+            <optgroup label="Grupo 1">
+                <option>option 1.1 very ver long text text text very long long very long</option>
+                <option>option 1.2</option>
+            </optgroup>
+
+            <optgroup label="Grupo 2">
+                Grupo 1
+                <option>option 2.1</option>
+                <option>option 2.2</option>
+            </optgroup>
+
+            <optgroup label="Grupo 3">
+                Grupo 3
+                <option>option 3.1</option>
+                <option>option 3.2</option>
+            </optgroup>
+        </select>
+        <div class="error">&nbsp;</div>
+      </div>
+
+      <div class="ctv-input-field select-field disabled">
+        <label class="active">disabled Select</label>
+        <select class="disabled" disabled>
+            <option>option 1.1 very ver long text text text very long long very long</option>
+            <option selected>option 1.2</option>
+            <option>option 3.1</option>
+            <option>option 3.2</option>
+        </select>
+        <div class="error">&nbsp;</div>
+      </div>
+
       <div class="button-set">
           <button class="ctv-btn outline">
             reset
@@ -168,18 +203,37 @@
 
     <div class="form-row">
         <div class="ctv-input-field">
-            <input type="checkbox" id="check01">
-            <label for="check01" title="Ricevi da Amici">testo label</label>
+            <div class="options">
+                <div>
+                    <input type="checkbox" id="check01">
+                    <label for="check01" title="Ricevi da Amici">Simple checkbox</label>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="form-row">
         <div class="ctv-input-field">
-            <input type="checkbox" id="check02">
-            <label for="check02" title="Ricevi da Amici">
-                Testo molto lungo per provare la funzionalità della checkbox. Testo molto lungo per
-                provare la funzionalità della checkbox.
+            
+            <div class="options column">
+                <div>
+                    <input type="checkbox" id="check02" required>
+                    <label for="check02" title="Ricevi da Amici">
+                        Testo molto lungo per provare la funzionalità della checkbox. Testo molto lungo per
+                        provare la funzionalità della checkbox.
+                    </label>
+                </div>
+                <div>
+                    <input type="checkbox" id="check03">
+                    <label for="check03" title="Ricevi da Amici">
+                        Testo molto checkbox.
+                    </label>
+                </div>
+            </div>
+            <label class="field-label required">
+                checkbox label title 
             </label>
+            <div class="error"></div>
         </div>
     </div>
   </div>
