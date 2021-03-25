@@ -51,7 +51,9 @@ textarea {
     //border: 1px solid var(--bg-color-orange);
     //min-width: 40%;
     font-size: 15px;
-    padding: 11px 22px;
+	padding: 11px 22px;
+	outline: 0;
+	border:1px solid transparent;
 
     &.outline {
         color: var(--bg-color-orange);
