@@ -29,7 +29,7 @@ textarea {
 }
 
 /* CSS for basic solid button */
-.ctv-btn {
+.ctv-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -48,8 +48,8 @@ textarea {
     cursor: pointer;
     background-color: var(--bg-color-orange);
     color: #fff;
-    border: 1px solid var(--bg-color-orange);
-    min-width: 40%;
+    //border: 1px solid var(--bg-color-orange);
+    //min-width: 40%;
     font-size: 15px;
     padding: 11px 22px;
 
