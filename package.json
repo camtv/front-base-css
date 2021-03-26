@@ -1,6 +1,6 @@
 {
   "name": "@camtv/front-base-css",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "description": "Repo dei css e mixins di base per le pagine esterne ed i componenti di base di CamTV",
   "main": "main.scss",
   "scripts": {
