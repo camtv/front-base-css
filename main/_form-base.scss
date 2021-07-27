@@ -124,6 +124,11 @@ textarea {
 			-webkit-box-shadow: 0 0 0 2px var(--input-color-error);
 			box-shadow: 0 0 0 2px var(--input-color-error);
 		}
+
+		select {
+			border:1px solid var(--input-color-error);
+		}
+		
 		/* show msg error */
 		.error {
 			visibility: visible;
