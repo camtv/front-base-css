@@ -128,7 +128,7 @@ textarea {
 		select {
 			border:1px solid var(--input-color-error);
 		}
-		
+
 		/* show msg error */
 		.error {
 			visibility: visible;
@@ -206,6 +206,7 @@ textarea {
 		color: var(--color-text-medium);
 		padding: 3px 5px;
 		transition: all 0.3s ease-out;
+		text-align: left;
 
 		i {
 			vertical-align: middle;
