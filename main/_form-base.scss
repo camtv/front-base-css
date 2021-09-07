@@ -387,6 +387,7 @@ textarea {
 
 			&::before {
 				border-color: var(--forms-disabled-color);
+				opacity: 0.3;
 			}
 		}
 
@@ -408,6 +409,7 @@ textarea {
 			&:disabled + label::before {
 				border-right-color: var(--forms-disabled-color);
 				border-bottom-color: var(--forms-disabled-color);
+				opacity:0.5;
 			}
 		}
 
