@@ -331,10 +331,12 @@ textarea {
 
 				&::before {
 					border-color: var(--forms-disabled-color);
+					opacity: 0.3;
 				}
 
 				&::after {
 					background-color: var(--forms-disabled-color);
+					opacity: 0.5;
 				}
 			}
 		}
