@@ -175,14 +175,17 @@ textarea {
 		font-size: 15px;
 		color:var(--color-text-dark);
 		position:relative;
+		min-height: 38px;
 
 		&:not(.disabled){
 			cursor: pointer;
+			background-color: #fff;
 		}
 
 		&.disabled{
 			cursor: not-allowed;
 			color:var(--forms-disabled-color);
+			background-color: #f1f1f1;
 			&:hover,
 			&:active {
 				border:1px solid var(--border-gray-light);
