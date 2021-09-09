@@ -142,20 +142,23 @@ textarea {
 			content: "";
 			right: 15px;
 			position: absolute;
-			top: 35px;
+			top: 31px;
 			pointer-events: none;
 			display: block;
-			width: 0;
+			width: 9px;
 			line-height: 1;
-			height: 0;
-			border-top: 5px solid var(--color-text-black);
-			border-right: 5px solid transparent;
-			border-bottom: 0;
-			border-left: 5px solid transparent;
+			height: 9px;
+			border-top: 2px solid transparent;
+			border-right: 2px solid var(--color-text-dark);
+			border-bottom: 2px solid var(--color-text-dark);
+			border-left: 2px solid transparent;
+			transform: rotate(45deg);
+			border-radius: 0px 2px 1px 2px;
 		}
 		&.disabled {
 			&:after{
-				border-top: 5px solid var(--forms-disabled-color);
+				border-right: 2px solid var(--forms-disabled-color);
+				border-bottom: 2px solid var(--forms-disabled-color);
 			}
 
 		}
