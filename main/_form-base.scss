@@ -27,6 +27,33 @@ textarea {
     justify-content: space-between;
 
 }
+/* basic links styles */
+.plain-link-secondary {
+	color: var(--color-link-secondary);
+    cursor: pointer;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+	user-select: none;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.plain-cta {
+	color: var(--input-blue-label);
+    cursor: pointer;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+	user-select: none;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+/* basic links styles */
 
 /* CSS for basic solid button */
 .ctv-button {
