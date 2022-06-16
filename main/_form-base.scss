@@ -1,6 +1,8 @@
 @import "./_colors.scss";
 input[type="text"],
 input[type="email"],
+input[type="date"],
+input[type="tel"],
 textarea {
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
