@@ -86,7 +86,15 @@ textarea {
         color: var(--bg-color-orange);
         background-color: #fff;
         border: 1px solid var(--bg-color-orange);
+		svg {
+			color:var(--bg-color-orange);
+		}
     }
+	&.solid {
+		svg {
+			color:#fff;
+		}
+	}
     
     &:focus {
         outline: 0;
@@ -102,6 +110,14 @@ textarea {
         opacity: unset;
         background-color:var(--border-gray-base);
         cursor: default;
+
+		border:1px solid var(--border-gray-base);
+        cursor: not-allowed;
+        color:var(--border-gray-base);
+        background-color:var(--bg-gray-light);
+		svg {
+			color:var(--border-gray-base);
+		}
     }
 }
 /* CSS for basic solid button */
@@ -278,7 +294,7 @@ textarea {
 		background-color: #fff;
 		box-sizing: inherit;
 		height: auto;
-		padding: 5px;
+		padding: 5px 15px;
 		border: 1px solid var(--border-gray-base);
 		border-radius: 3px;
 		outline: none;
@@ -289,6 +305,7 @@ textarea {
 		box-shadow: unset;
 		transition: all 0.3s ease-out;
 		line-height: normal;
+		min-height: 38px;
 
 		&:focus:not([readonly]) {
 			border-color: transparent;
