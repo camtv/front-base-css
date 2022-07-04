@@ -121,6 +121,11 @@ textarea {
 			color:var(--border-gray-base);
 		}
     }
+	&.small {
+		font-size: 14px;
+    	padding: 8px 16px;
+    	border-radius: 4px;
+	}
 }
 /* CSS for basic solid button */
 
